@@ -1,0 +1,29 @@
+.caixa_cadastro {
+    width: 200px;
+    height: 40px;
+    border: solid 1px #F1BA55;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Century Gothic';
+    color: #f59a23;
+    background-color: #004367;
+    border: none;
+    border-radius: 25px;
+    width: 115px;
+    height: 40px;
+}
+
+small {
+    font-size: 12px;
+}
+
+.asterisco {
+    color: #FF0000;
+}

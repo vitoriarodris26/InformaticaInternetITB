@@ -1,0 +1,13 @@
+#button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Century Gothic';
+    color: #f59a23;
+    background-color: #004367;
+    border: none;
+    border-radius: 25px;
+    width: 115px;
+    height: 40px;
+    text-align: center;
+}

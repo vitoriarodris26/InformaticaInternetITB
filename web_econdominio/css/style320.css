@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Century Gothic';
+}
+
+
+#caixa_fundo {
+    min-width: 320px;
+    max-width: 599px;
+    display: flex;
+}
+
+/*Caixa de notificação*/
+#sino {
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+}
+
+#nav{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+
+}
+#nav li {
+    margin-right: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#nav li a{
+    color: #333333;
+    text-decoration: none;
+}
+
+#nav li a:hover{
+    color:#006699;
+    text-decoration: none;
+}
+
+#notificacao_li{
+    position: relative;
+}
+
+#container_notificacao {
+    background-color: #fff;
+    box-shadow: 0 3px 8px #00436749;
+    overflow: visible;
+    position: absolute;
+    bottom: -350px;
+    width: 200px;
+    display: none;
+    margin-left: 13px !important;
+}
+
+#container_notificacao:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    color: transparent;
+    border: 10px solid;
+    border-color: transparent transparent #00436749;
+    margin-top: -19px;
+}
+
+#body_notificacao {
+    padding: 33px 0px 0px 0px !important;
+    min-height:300px;
+    margin-top: -20px;
+}
+
+#rodape_notificacao {
+    background-color: #e9eaed;
+    text-align: center;
+    font-weight: bold;
+    padding: 8px;
+    font-size: 12px;
+    border-top: 1px solid #dddddd;
+    font-family: 'Century Gothic';
+}
+
+#numero_notificacao{
+    padding: 2px 6px 2px 6px;
+    background: #cc0000;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 9px;
+    margin-right: -25px;
+    margin-top: 10px;
+    font-size: 11px;
+    font-family: 'Century Gothic';
+    position: absolute;
+}
+
+#logo_topo {
+    min-width: 175px;
+    max-width: 190px;
+    min-height: 170px;
+    max-height: 180px;
+    margin-top: 5px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Menu hambúrguer; */
+li {
+    list-style-type: none;
+    
+}
+
+label .menu{
+    position: absolute;
+    right: -5px;
+    top: -100px;
+    z-index: 100;
+    width: 100px;
+    height: 80px;
+    background-color: #004367;
+    border-radius: 50% 50% 50% 50%;
+    box-shadow: 0 0 0 0 #004367, 0 0 0 0 #004367;
+    transition: 0.5s ease;
+}
+
+label .hamburger {
+    position: absolute;
+    top: 135px;
+    left: 50px;
+    width: 30px;
+    height: 3px;
+    background-color: #004367;
+    display: block;
+    transform-origin: center;
+    transition: 0.5s ease;
+}
+
+label .hamburger:after,label .hamburger:before{
+    content:"";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #004367;
+}
+
+label .hamburger:before {
+    top: -10px;
+}
+
+label .hamburger:after {
+    bottom: -10px;
+}
+
+label input {
+    display: none;
+}
+
+label input:checked + .menu {
+    box-shadow: 0 0 0 230vw #fff, 0 0 0 0 #fff;
+    border-radius: 0;
+    z-index: 3;
+}
+
+label input:checked + .menu .hamburger {
+    transform: rotate(45deg);
+}
+
+label input:checked + .menu .hamburger:after {
+    transform: rotate(90deg);
+    bottom: 0;
+}
+
+label input:checked + .menu .hamburger:before {
+    transform: rotate(90deg);
+    top: 0;
+}
+
+label input:checked + .menu + ul{
+    opacity: 1;
+}
+
+label ul{
+    z-index: 200;
+    position: absolute;
+    top: 70%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 0.25s 0s ease-in-out;
+    margin-bottom: 1.5em;
+}
+
+label a{
+    font-family: 'Century Gothic';
+    font-size: 18px;
+    display: block;
+    color: #004367;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+}
+
+label hr {
+    width: 140%;
+    border: solid 2px #F1BA56;
+}
+
+#rodape {
+    background-color: #333;
+    width: 100%;
+    height: 140px;
+    display: -webkit-box;
+}
+
+.logo_rodape {
+    width: 55px;
+    height: 55px;
+    margin: 5px;
+}
+
+#logo {
+    width: 65px;
+    height: 85px;
+    background-color: #fff;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+#link1 {
+    font-family: 'Century Gothic';
+    font-size: 11px;
+    color: #fff;
+    width: 120px;
+    height: 140px;
+    margin-top: 15px;
+    line-height: 25px;
+}
+
+#link2 {
+    font-family: 'Century Gothic';
+    font-size: 11px;
+    color: #fff;
+    width: 130px;
+    height: 140px;
+    margin-top: 15px;
+    line-height: 25px;
+}
+
+.link_rodape {
+    color: #fff;
+    text-decoration: none;
+}
+
+#subir img{
+	position: fixed;
+	bottom: 10px;
+    right: 10px;
+    border-radius: 390px;
+    height: 43px;
+    width: 46px;
+}
+
+.fieldset {
+    border: none;
+}
+
+#caixa_fora {
+    margin: 25px;
+    border: solid 1px #f59a23;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.logo {
+    width: 195px;
+    height: 205px;
+    margin-top: -15px;
+}

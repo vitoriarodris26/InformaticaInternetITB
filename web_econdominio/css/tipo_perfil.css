@@ -1,0 +1,35 @@
+#caixa_fora {
+    margin: 25px;
+    border: solid 1px #f59a23;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.logo {
+    width: 195px;
+    height: 205px;
+    margin-top: -15px;
+}
+
+span {
+    font-family: 'Century Gothic';
+    font-size: 15px;
+}
+
+.botao {
+    color: #F1BA56;
+    background-color: #486680;
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    width: 120px;
+}
+
+small {
+    font-family: 'Century Gothic';
+    font-size: 12px;
+}
+
+small a {
+    color: #004367;
+}

@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Century Gothic';
+    margin: 0;
+    padding: 0;
+}
+
+#caixa_fundo {
+    min-width: 320px;
+    max-width: 599px;
+    display: flex;
+}
+
+#conecte_se {
+    width: 25px;
+    height: 25px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+#logo_topo {
+    min-width: 175px;
+    max-width: 190px;
+    min-height: 170px;
+    max-height: 180px;
+    margin-top: 5px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Menu hambúrguer; */
+li {
+    list-style-type: none;
+}
+
+label .menu{
+    position: absolute;
+    right: -5px;
+    top: -100px;
+    z-index: 100;
+    width: 100px;
+    height: 80px;
+    background-color: #004367;
+    border-radius: 50% 50% 50% 50%;
+    box-shadow: 0 0 0 0 #004367, 0 0 0 0 #004367;
+    transition: 0.5s ease;
+}
+
+label .hamburger {
+    position: absolute;
+    top: 135px;
+    left: 50px;
+    width: 30px;
+    height: 3px;
+    background-color: #004367;
+    display: block;
+    transform-origin: center;
+    transition: 0.5s ease;
+}
+
+label .hamburger:after,label .hamburger:before{
+    content:"";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #004367;
+}
+
+label .hamburger:before {
+    top: -10px;
+}
+
+label .hamburger:after {
+    bottom: -10px;
+}
+
+label input {
+    display: none;
+}
+
+label input:checked + .menu {
+    box-shadow: 0 0 0 230vw #fff, 0 0 0 0 #fff;
+    border-radius: 0;
+    z-index: 3;
+}
+
+label input:checked + .menu .hamburger {
+    transform: rotate(45deg);
+}
+
+label input:checked + .menu .hamburger:after {
+    transform: rotate(90deg);
+    bottom: 0;
+}
+
+label input:checked + .menu .hamburger:before {
+    transform: rotate(90deg);
+    top: 0;
+}
+
+label input:checked + .menu + ul{
+    opacity: 1;
+}
+
+label ul{
+    z-index: 200;
+    position: absolute;
+    top: 70%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 0.25s 0s ease-in-out;
+    margin-bottom: 1.5em;
+}
+
+label a{
+    font-family: 'Century Gothic';
+    font-size: 18px;
+    display: block;
+    color: #004367;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+}
+
+label hr {
+    width: 140%;
+    border: solid 2px #F1BA56;
+}
+
+#foto_home {
+    height:35vh;
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.linha {
+    border-top: solid 15px rgb(230, 175, 56);
+    margin-top: -5px;
+    margin-bottom: auto;
+}
+
+#frase {
+    font-family: 'Century Gothic';
+    font-weight: normal;
+    font-size: 16px;
+    text-align: center;
+    color: #7F7F7F;
+}
+
+.servicos {
+    text-align: center;
+}
+
+.servicos a {
+    text-align: center;
+    color: #06577b;
+    text-decoration: none;
+}
+
+.menina_cachos {
+    text-align: center;
+}
+
+#imagem_rodape {
+    display: inline;
+}
+
+.imagem_rodape {
+    width: 100%;
+    height: 145px;
+    margin-bottom: -60px;
+}
+
+.botao_rodape {
+    text-align: center;
+    margin-left: 16%;
+    width: 80px;
+    height: 30px;
+    border: none;
+    background-color: #fff; 
+    color: #004367;
+    border-radius: 15px;
+}
